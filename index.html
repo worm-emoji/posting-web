@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/webfont.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>posting rocks</title>
+</head>
+
+<body>
+    <div class="content">
+        <h2 id="time"></h2>
+        <h1>Posting is an app.</h1>
+        <p>(It rocks!)</p>
+    </div>
+
+    <script>
+        var setDate = function () {
+            var date = new Date();
+            var el = document.getElementById("time");
+            var formatted = "[" + date.toLocaleTimeString(window.navigator.browserLanguage || window.navigator.language || "en", { hour: '2-digit', minute: '2-digit' }) + "]";
+            if (el.innerHTML !== formatted) {
+                el.innerHTML = formatted;
+            }
+        }
+        setDate();
+        setInterval(setDate, 1000);
+    </script>
+</body>
+
+</html>
