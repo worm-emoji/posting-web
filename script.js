@@ -1,11 +1,12 @@
 var things = [
   "an app",
-  "a lifestyle",
   "a process",
   "a feeling",
   "an experience",
   "like a dream",
-  "a fun thing to show your parents"
+  "a fun thing to show your parents",
+  "a way of life",
+  "is hot"
 ];
 var randomThing = things[Math.floor(Math.random() * things.length)];
 document.getElementById("wtf").innerHTML = randomThing;
