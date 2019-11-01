@@ -15,6 +15,7 @@ var things = [
 ];
 var randomThing = things[Math.floor(Math.random() * things.length)];
 document.getElementById("wtf").innerHTML = randomThing;
+document.title = "posting is " + randomThing + ".";
 
 var setDate = function() {
   var date = new Date();
