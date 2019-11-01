@@ -10,11 +10,15 @@
 <body>
     <div class="content">
         <h2 id="time"></h2>
-        <h1>Posting is an app.</h1>
+        <h1>Posting is <span id="wtf">an app</span>.</h1>
         <p>(It rocks!)</p>
     </div>
 
     <script>
+        var things = ["an app", "a lifestyle", "a process", "a feeling", "an experience", "like a dream"];
+        var randomThing = things[Math.floor(Math.random() * things.length)]
+        document.getElementById("wtf").innerHTML = randomThing;
+
         var setDate = function () {
             var date = new Date();
             var el = document.getElementById("time");
