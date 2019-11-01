@@ -10,7 +10,8 @@ var things = [
   "a natural source of beauty",
   "your worst nightmare",
   "my dream house",
-  "a cult"
+  "a cult",
+  "a way to know yourself better"
 ];
 var randomThing = things[Math.floor(Math.random() * things.length)];
 document.getElementById("wtf").innerHTML = randomThing;
