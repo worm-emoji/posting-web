@@ -6,7 +6,11 @@ var things = [
   "like a dream",
   "a fun thing to show your parents",
   "a way of life",
-  "is hot"
+  "hot",
+  "a natural source of beauty",
+  "your worst nightmare",
+  "my dream house",
+  "a cult"
 ];
 var randomThing = things[Math.floor(Math.random() * things.length)];
 document.getElementById("wtf").innerHTML = randomThing;
@@ -16,10 +20,7 @@ var setDate = function() {
   var el = document.getElementById("time");
   var formatted =
     "[" +
-    date.toLocaleTimeString(
-      window.navigator.browserLanguage || window.navigator.language || "en",
-      { hour: "2-digit", minute: "2-digit" }
-    ) +
+    date.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" }) +
     "]";
   if (el.innerHTML !== formatted) {
     el.innerHTML = formatted;
