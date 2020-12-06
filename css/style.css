@@ -9,6 +9,10 @@ body {
   padding: 1rem;
 }
 
+h1 {
+  font-size: 22px;
+}
+
 h2 {
   font-weight: 500;
   font-size: 18px;
@@ -20,4 +24,10 @@ h2 {
     background: black;
     color: white;
   }
+}
+
+a:visited,
+a:active,
+a {
+  color: black;
 }
