@@ -15,15 +15,21 @@ h2 {
   user-select: none;
 }
 
+a:visited,
+a:active,
+a {
+  color: black;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
     color: white;
   }
-}
 
-a:visited,
-a:active,
-a {
-  color: black;
+  a:visited,
+  a:active,
+  a {
+    color: white;
+  }
 }
