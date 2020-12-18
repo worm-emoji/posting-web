@@ -1,35 +1,100 @@
+h2 {
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 15px;
+}
+
 body {
-  font-family: "Iosevka Web", monospace;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
+        font-family: "Iosevka Web", monospace;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
 }
 
 .content {
-  padding: 1rem;
+        padding: 1rem;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 18px;
-  user-select: none;
+        font-weight: 500;
+        font-size: 18px;
+        user-select: none;
 }
 
 a:visited,
 a:active,
 a {
-  color: black;
+        color: black;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: black;
-    color: white;
-  }
+        body {
+                background: black;
+                color: white;
+        }
 
-  a:visited,
-  a:active,
-  a {
-    color: white;
-  }
+        a:visited,
+        a:active,
+        a {
+                color: white;
+        }
+}
+ul {
+        padding: 0;
+}
+
+ul li {
+        list-style: none;
+}
+li:before {
+        content: "->";
+}
+
+li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+}
+
+img {
+        height: auto;
+        max-width: 100%;
+        filter: grayscale(100%);
+        transition: 800ms;
+        user-select: none;
+        object-fit: contain;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 9px;
+        padding-right: 9px;
+}
+
+@media (min-width: 800px) {
+        img {
+                padding: 18px;
+        }
+}
+
+img:hover {
+        filter: grayscale(0%);
+}
+
+.img-row {
+        width: 40%;
+        max-width: 200px;
+        flex-direction: row;
+        display: flex;
+        align-items: flex-start;
+}
+
+.one-img {
+        max-width: 400px;
+}
+
+.one-img img {
+        padding-left: 0;
+        padding-bottom: 0;
+}
+
+#time {
+        text-decoration: none;
 }
