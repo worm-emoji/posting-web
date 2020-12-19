@@ -21,10 +21,21 @@ a {
   color: black;
 }
 
+em {
+  font-weight: 500;
+  border-bottom: 1px dotted black;
+  background-color: #ececec;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
     color: white;
+  }
+
+  em {
+    border-bottom: 1px dotted white;
+    background-color: #111;
   }
 
   a:visited,
@@ -41,7 +52,7 @@ ul li {
   list-style: none;
 }
 li:before {
-  content: "->";
+  content: "-> ";
 }
 
 li {
@@ -49,32 +60,37 @@ li {
   margin-bottom: 16px;
 }
 
-img {
+picture {
   height: auto;
-  max-width: 100%;
   filter: grayscale(100%);
   transition: filter 800ms;
   user-select: none;
-  object-fit: contain;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 9px;
-  padding-right: 9px;
+  padding-rigth: 9px;
 }
 
-@media (min-width: 800px) {
-  img {
-    padding: 18px;
-  }
+picture > img,
+picture > source {
+  max-width: 100%;
+  object-fit: contain;
 }
 
-img:hover {
+/* @media (min-width: 800px) { */
+/*   source, */
+/*   img { */
+/*     padding: 18px; */
+/*   } */
+/* } */
+
+picture:hover {
   filter: grayscale(0%);
 }
 
 .img-row {
-  width: 40%;
-  max-width: 200px;
+  width: 60%;
+  max-width: 600px;
   flex-direction: row;
   display: flex;
   align-items: flex-start;
