@@ -90,6 +90,7 @@ img:hover {
 }
 
 #time {
+  user-select: none;
   height: 18px;
   line-height: 18px;
   font-weight: 400;
