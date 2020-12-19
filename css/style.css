@@ -35,7 +35,7 @@ em {
 
   em {
     border-bottom: 1px dotted white;
-    background-color: #111;
+    background-color: #222222;
   }
 
   a:visited,
@@ -77,19 +77,12 @@ picture > source {
   object-fit: contain;
 }
 
-/* @media (min-width: 800px) { */
-/*   source, */
-/*   img { */
-/*     padding: 18px; */
-/*   } */
-/* } */
-
 picture:hover {
   filter: grayscale(0%);
 }
 
 .img-row {
-  width: 60%;
+  width: 80%;
   max-width: 600px;
   flex-direction: row;
   display: flex;
