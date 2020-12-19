@@ -59,7 +59,7 @@ img {
   height: auto;
   max-width: 100%;
   filter: grayscale(100%);
-  transition: 800ms;
+  transition: filter 800ms;
   user-select: none;
   object-fit: contain;
   padding-top: 18px;
